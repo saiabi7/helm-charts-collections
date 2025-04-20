@@ -1,3 +1,6 @@
+
+## Documentation
+
 # 🚀 Helm Charts by Sai
 
 Welcome to my personal collection of Helm charts! This repo contains Helm charts built from scratch to showcase my skills in Kubernetes application packaging, configuration management, and deployment automation.
@@ -31,4 +34,23 @@ helm repo update
 # Install the nginx chart
 helm install nginx sai-charts/nginx
 
+
+⚙️ Customization
+You can override values during installation:
+helm install my-nginx sai-charts/nginx \
+  --set replicaCount=2 \
+  --set service.port=8080 \
+  --set config.indexHtml="<html><h1>Hello from Helm!</h1></html>"
+
+
+Or modify the values.yaml file and install:
+helm install my-nginx sai-charts/nginx -f custom-values.yaml
+
+
+🧪 Testing Locally
+To install and test from your local copy:
+
+git clone https://github.com/saiabi7/helm-charts-collections.git
+cd helm-charts-collections/nginx
+helm install my-nginx .
 

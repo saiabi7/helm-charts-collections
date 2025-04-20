@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  nginx:
+  - apiVersion: v2
+    appVersion: 1.14.2
+    created: "2025-04-20T22:01:55.291713248+05:30"
+    description: A simple NGINX Helm chart with custom index.html
+    digest: 7de5004c89c023e1069eeae2d81df3afec039e98acf4e42b15816d2ca7842fb0
+    icon: https://www.nginx.com/wp-content/uploads/2020/05/NGINX-logo-rgb-large.png
+    name: nginx
+    type: application
+    urls:
+    - https://saiabi7.github.io/helm-charts-collections/nginx-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-04-20T22:01:55.291339512+05:30"

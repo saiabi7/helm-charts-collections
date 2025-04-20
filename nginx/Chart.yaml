@@ -1,0 +1,7 @@
+apiVersion: v2
+name: nginx
+description: A simple NGINX Helm chart with custom index.html
+type: application
+version: 0.1.0
+appVersion: "1.14.2"
+icon: https://www.nginx.com/wp-content/uploads/2020/05/NGINX-logo-rgb-large.png

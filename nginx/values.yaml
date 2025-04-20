@@ -1,0 +1,16 @@
+replicaCount: 2
+
+image:
+  repository: nginx
+  tag: 1.14.2
+
+service:
+  port: 80
+
+ingress:
+  enabled: true
+  host: nginx.local  # change based on your cluster setup
+
+serviceAccount:
+  create: true
+  name: ""

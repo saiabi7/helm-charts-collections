@@ -1,1 +1,34 @@
+# 🚀 Helm Charts by Sai
+
+Welcome to my personal collection of Helm charts! This repo contains Helm charts built from scratch to showcase my skills in Kubernetes application packaging, configuration management, and deployment automation.
+
+## 📦 Available Charts
+
+| Chart Name | Description                     | Status  |
+|------------|----------------------------------|---------|
+| `nginx`    | Deploys an NGINX web server with customizable config, replicas, port, and Ingress | ✅ Ready |
+
+---
+
+## 🌐 Chart: `nginx`
+
+A simple and production-ready Helm chart for deploying a basic NGINX server. Includes:
+
+- 📁 ConfigMap for custom `index.html`
+- 🔄 Deployment with configurable replica count and image
+- 🌐 Ingress support
+- 🛠️ Service customization
+
+### 🧰 Installation
+
+```bash
+# Add this repo to your local Helm client
+helm repo add sai-charts https://saiabi7.github.io/helm-charts-collections
+
+# Update repo index
+helm repo update
+
+# Install the nginx chart
+helm install nginx sai-charts/nginx
+
 
